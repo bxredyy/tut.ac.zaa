@@ -1,0 +1,280 @@
+
+<!DOCTYPE html >
+<html class="no-js" dir="ltr" lang="en-ZA">
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Expires" content="0" />
+<title>Tshwane University of Technology Website not available</title>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700"/>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:900,700"/>
+<link rel="stylesheet" type="text/css" href="./TUT/css/font-awesome.min.css"/>
+<link rel="stylesheet" type="text/css" href="./TUT/asset/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="./TUT/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="./TUT/css/responsive.css"/>
+<link rel="stylesheet" type="text/css" href="./TUT/css/animate.css"/>
+<link rel="stylesheet" type="text/css" href="./TUT/css/colors/red.css"/>
+<link rel="stylesheet" type="text/css" href="./TUT/css/tut.css"/>
+<script type="text/javascript" src="./TUT/js/jquery-1.12.4.min.js"></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<script type="text/javascript" src="./TUT/js/modernizrr.js"></script>
+<script type="text/javascript" src="./TUT/asset/js/bootstrap.min.js"></script>
+<!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->        
+</head>
+<body>
+    <div id="s4-workspace">
+        <div id="s4-bodyContainer">
+            <!-- Full Body Container -->
+            <div id="container">
+                <!-- Header Section start-->
+                <header id="header" class="alt clearfix">
+                    <div class="tut-lgo-outer">
+                        <a href="/">
+                            <span id="tut-lgo-inner">
+                            </span>
+                        </a>
+                    </div>
+                    <nav id="nav">
+                        <ul>
+                            <li>
+                                <a href="#" class="extraMenu" style="padding: 5px !important;"></a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <!-- End Header Logo &#38; Naviagtion -->
+                </header>
+                <!-- End Header Section -->
+                <!-- spacer to move content below header -->
+                <span><div style="height:55px"></div></span>
+                    <div data-name="ContentPlaceHolderMain">
+                        <span id="DeltaPlaceHolderMain">
+                            <style type="text/css">
+                            .page-banner {
+                            background: url(./TUT/images/dr-banner2.png) center; 
+                            background-color: darkgrey;
+                            }    
+                            .page-banner h2 {
+                            color:white;
+                            }
+
+                            .breadcrumbs ul li a
+                            {
+                            color:white;
+                            }
+
+                            .page-banner-olayer
+                            {
+                            z-index: 5;
+                            background-color:rgba(0, 0, 0, 0.50);
+                            padding:30px 0;
+                            }
+                            </style>
+                            <!-- Start Page Banner -->
+                            <div class="page-banner no-subtitle">
+                            <div class="page-banner-olayer">
+                            <div class="container">
+                            <div class="row">
+                              <!--<div class="col-md-6"> -->
+                                <div class="col-md-12">
+                                <h2>Welcome to the Tshwane University of Technology</h2>
+                              </div>
+                              <!-- <div class="col-md-6">
+							  
+                                <ul class="tdbreadcrumbs"><li><a>The website is temporarily unavailable</a></li></ul> 
+                              </div> -->
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            <!-- End Page Banner -->
+
+                            <!-- Start Content -->
+                            <!-- spacer to move content below header -->   
+                            <div style="height:35px"></div>
+                            <div class="container">
+
+                            <div class="row sidebar-page">
+
+                            <!--End sidebar-->        
+                            <!-- Page Content -->
+                            <div class="col-md-12">
+                                <!-- your content here -->
+                                <h4 class="classic-title"><span>Important Message</span></h4>
+<p>                                
+We are currently experiencing technical challenges with our website. As a result, only limited functionality is available. Full website functionality will be restored and be made available as soon as possible.  
+
+We apologise for any inconvenience this may cause, and appreciate your patience and understanding. 
+
+								</p><p> </p><p>
+
+								<br>
+
+If you have any questions or need assistance, you are welcome to connect with us through the contacts provided below.
+                                </p><br> 
+<h3>Quick Links</h3>
+<ul style="list-style: circle;margin: 2px;margin: 8px;">
+<li><a href='https://tutprodi4ie.tut.ac.za/pls/prodi41/gen.gw1pkg.gw1startup?x_processcode=ITS_OAP'>Online Application</a></li>    
+<li><a href='https://tutprodi4ie.tut.ac.za/pls/prodi41/wtut012pkg.startup'>Check your Status</a></li>
+<li><a href='https://tutprodi4ie.tut.ac.za/pls/prodi41/w99pkg.mi_login'>Re-Admission / Online Registration</a></li>
+<li><a href="https://mytutord2l.tut.ac.za/">MyTUTor</a></li>
+<li><a href="https://outlook.office.com/">Student / Staff Email</a></li>    
+<li><a href='https://tutprodi4ie.tut.ac.za/pls/prodi41/w99pkg.mi_login'>Staff iEnabler</a></li>    
+</ul>
+                                <!-- Divider -->
+                                <div style="margin-top:30px; "></div>
+                            </div>
+   
+                                
+                            <div class="col-md-12">
+                            <!-- TUT Contact Toggle --><div class="panel-group"><!-- Start Toggle 1 -->
+                            <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1">
+                                    <i class="fa fa-angle-up control-icon"></i>
+                                    Contact Centre    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse-1" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <div><strong>Tel: </strong> 086 110 2421</div>
+                                    <!--<div><strong>SMS Number: </strong> 30655</div>-->
+                                </div>
+                            </div>
+                            </div>
+                            <!-- End Toggle 1 -->
+                            <!-- Start Toggle 2 -->
+                            <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse-2" class="collapsed" aria-expanded="false">
+                                    <i class="fa fa-angle-down control-icon"></i>
+                                    General Enquiries    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse-2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                <div class="panel-body">
+                            <div><strong>Email:</strong> <a href="mailto:general@tut.ac.za">general@tut.ac.za</a></div>
+                                </div>
+                            </div>
+                            </div>
+                            <!-- End Toggle 2 -->
+                            </div>
+                            <!-- End Toggle -->
+                            <div style="margin-top:160px; "></div>
+                            </div>                                
+                                
+
+                                
+                                
+                            <!-- End Page Content-->          
+                            </div>
+                            </div>
+
+                        </span>
+                    </div>
+                <!-- Start Footer Section -->
+                <footer class="footer">
+                    <div class="container">
+                        <!-- start of footer links -->
+                        <div class="row footer-widgets">
+                        <!-- Start Subscribe &#38; Social Links Widget -->
+
+                        <div class="col-md-3 col-xs-12">
+                            <!--start of social widgets -->
+                            <div class="footer-widget social-widget">
+                                <h4>Follow Us
+
+                                    <span class="head-line">
+                                    </span>
+                                </h4>
+                                <ul class="social-icons">
+                                    <li>
+                                        <a class="facebook" href="https://www.facebook.com/TUTCommunications">
+                                            <i class="fa fa-facebook">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="twitter" href="https://twitter.com/official_tut">
+                                            <i class="fa fa-twitter">
+                                            </i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- end of social links widget -->
+                        <div id="footer-links">
+
+                            <div class="col-md-3 col-xs-12">
+                                <div class="footer-widget tutf-widget">
+                                    <h4>For Students<span class="head-line"></span></h4>
+                                    <ul>
+                                        <li><a href="https://outlook.office.com/">Student Email</a></li>
+                                    <!--    <li><a href="http://lib.tut.ac.za/">Library</a></li> -->
+                                        <li><a href="https://mytutord2l.tut.ac.za/">MyTUTor</a></li>
+                                        
+                                    </ul>                                    
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-3 col-xs-12">
+                                <div class="footer-widget tutf-widget">
+                                    <h4>For Staff<span class="head-line"></span></h4>
+                                    <ul>
+                                        <li><a href="https://outlook.office.com/">Staff Email</a></li>
+<!--                                        <li><a href="https://jupiter.tut.ac.za/">Staff Portal</a></li> -->
+                                    </ul>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-12">
+                                <div class="footer-widget tutf-widget">
+                                    <h4>Enrolments<span class="head-line"></span></h4>
+                                    <ul>
+                                        <li><a href="https://tutprodi4ie.tut.ac.za/pls/prodi41/gen.gw1pkg.gw1startup?x_processcode=ITS_OAP">Online Applications</a></li>
+                                        <li><a href="https://tutprodi4ie.tut.ac.za/pls/prodi41/w99pkg.mi_login">Online Registration</a></li>
+                                        <!--
+                                        <li><a href="http://ipapp.tut.ac.za:7778/pls/apex/f?p=1200:4:">Late Application Enquiries</a></li>
+                                        <li><a href="https://ipenabler.tut.ac.za/pls/prodi03/wtut012pkg.startup">Check your admission status</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!-- end of footer links
+                        <!-- .row -->
+                        <div style="height:80px;"></div>
+                        <!--  Start Copyright -->
+                        <div class="copyright-section">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>&#169;TUT - All Rights Reserved</p>
+                                </div>
+                                <!-- .col-md-6 -->
+                                <div class="col-md-6">
+                                    <ul class="footer-nav">
+                                        <li>
+                                            <a href="#"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- .col-md-6 -->
+                            </div>
+                            <!-- .row -->
+                        </div>
+                        <!-- End Copyright -->
+                    </div>
+                </footer>
+                <!-- End Footer Section -->
+            </div>
+
+        </div>
+    </div>
+    <!-- Go To Top Link -->
+</body>
+</html>

@@ -1,0 +1,817 @@
+/*
+    for nav, must look at:
+    http://www.codeproject.com/Tips/1109728/Create-Custom-Top-Navigation-Menu-in-Sharepoint
+    https://msdn.microsoft.com/en-us/library/ee231548(v=vs.110).aspx
+    http://www.sharepointpals.com/post/Step-by-step-procedures-to-create-a-delegate-control-in-SharePoint-2010
+    https://blogs.msdn.microsoft.com/gauravbadhan/2013/04/02/creating-a-custom-navigation-for-sharepoint-2010/
+    
+    
+    */
+
+menu,
+nav {
+    display: block;
+}
+
+#menu_subs div {
+    display: block;
+    cursor: pointer;
+    /* font-variant: small-caps; */
+    text-transform: uppercase;
+}
+
+.main_menu_links ul li {
+    font-weight: normal;
+    cursor: auto;
+    padding: 7px;
+    margin-left: 7px;
+}
+
+.main_menu_links {
+    margin: 15px;
+    font-size: 12px
+}
+
+.apply_now_main {
+    padding: 5px !important;
+    background: url('../images/link_bg.jpg');
+    /* height: 4.5em; */
+}
+
+#tmenu {
+    letter-spacing: 0.075em;
+    -moz-transform: translateX(50em);
+    -webkit-transform: translateX(50em);
+    -ms-transform: translateX(50em);
+    transform: translateX(50em);
+    -moz-transition: -moz-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    -webkit-overflow-scrolling: touch;
+    /*background: #21b2a6;
+			background: #2e3842;*/
+    background: #2e3842;
+    color: #ffffff;
+    height: 100%;
+    max-width: 80%;
+    overflow-y: auto;
+    padding: 3em 2em;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 20em;
+    z-index: 10002;
+}
+
+#tmenu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#tmenu ul>li {
+    border-top: solid 1px rgba(0, 0, 0, 0.125);
+    margin: 0.5em 0 0 0;
+    padding: 0.5em 0 0 0;
+}
+
+#tmenu ul>li:first-child {
+    border-top: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+#tmenu ul>li>a {
+    border: 0;
+    color: inherit;
+    display: block;
+    /* font-size: 0.8em; 
+					letter-spacing: 0.225em; */
+    outline: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 736px) {
+    #tmenu ul>li>a div {
+        line-height: 3em;
+    }
+}
+
+#tmenu .close {
+    background-image: url("../images/close.svg");
+    background-position: 4.85em 1em;
+    background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    height: 3em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    vertical-align: middle;
+    width: 7em;
+}
+
+@media screen and (max-width: 736px) {
+    #tmenu {
+        padding: 3em 1.5em;
+        letter-spacing: 0.0375em;
+    }
+}
+
+body.is-menu-visible #container {
+    opacity: 0.35;
+}
+
+body.is-menu-visible #container:before {
+    display: block;
+}
+
+body.is-menu-visible #tmenu {
+    -moz-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+/* Header */
+
+#header {
+    -moz-transition: background-color 0.2s ease;
+    -webkit-transition: background-color 0.2s ease;
+    -ms-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+    background: #2e3842;
+    height: 4.2em;
+    left: 0;
+    line-height: 3em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+#header h1 {
+    -moz-transition: opacity 0.2s ease;
+    -webkit-transition: opacity 0.2s ease;
+    -ms-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+    height: inherit;
+    left: 1.25em;
+    line-height: inherit;
+    position: absolute;
+    top: 0;
+}
+
+#header h1 a {
+    border: 0;
+    display: block;
+    height: inherit;
+    line-height: inherit;
+}
+
+@media screen and (max-width: 736px) {
+    #header h1 a {
+        font-size: 0.8em;
+    }
+}
+
+#header nav {
+    height: inherit;
+    line-height: inherit;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#header nav>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+#header nav>ul>li {
+    display: inline-block;
+    padding: 0;
+}
+
+#header nav>ul>li>a {
+    border: 0;
+    color: white;
+    display: block;
+    font-size: 0.9em;
+    font-weight: 900;
+    letter-spacing: 0.225em;
+    padding: 0 1.5em;
+    text-transform: uppercase;
+}
+
+#header nav>ul>li>a.menuToggle {
+    outline: 0;
+    position: relative;
+}
+
+#header nav>ul>li>a.menuToggle:after {
+    background-image: url("../images/bars.svg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    height: 3.7em;
+    vertical-align: top;
+    width: 2em;
+}
+
+#header nav>ul>li>a.extraMenu:after {
+    content: '';
+    display: inline-block;
+    height: 3.7em;
+    vertical-align: top;
+    width: 0px;
+}
+
+@media screen and (max-width: 736px) {
+    #header nav>ul>li>a.menuToggle a.extraMenu {
+        padding: 0 1.5em;
+    }
+    #header nav>ul>li>a.menuToggle span a.extraMenu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #header nav>ul>li>a {
+        /* padding: 0 0 0 1.5em; */
+        padding: 0 0.7em;
+    }
+}
+
+#header nav>ul>li:first-child {
+    margin-left: 0;
+}
+
+#header.alt {
+    /*background: transparent;*/
+    background-color: #242424;
+    min-height: 50px;
+}
+
+#header.alt h1 {
+    -moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    opacity: 0;
+}
+
+/*pieter*/
+
+/* frames for photos - originally developed for Mountain Herb Est. */
+
+.tut-photo-frame {
+    /* display:table; */
+    margin: 1px;
+    /* float: left; */
+}
+
+.tut-photo-frame img {
+    padding: 5px;
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+}
+
+.tut-photo-caption {
+    padding: 15px 6px 12px 6px;
+    font-style: italic;
+}
+
+/* Member Page */
+
+.tut-text-right {
+    text-align: right;
+}
+
+/* set ul and ol back to what they was, otherwise the users can not publish lists */
+
+.page-content ul {
+    list-style-type: square;
+    padding-left: 35px;
+    margin-bottom: 10px;
+}
+
+.page-content ol {
+    list-style-type: decimal;
+    padding-left: 35px;
+    margin-bottom: 10px;
+}
+
+/* and fix the tabs we just broke with the above... */
+
+.nav-tabs {
+    padding-left: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+/*side nav */
+
+.widget-categories ul li a.selected {
+    color: red;
+}
+
+.tslide-link1:visited {
+    color: #e5e5e5;
+}
+
+.tslide-link1 {
+    color: white;
+}
+
+.tslide-link1:hover {
+    color: Black;
+}
+
+.tslide-link1:focus {
+    color: slategrey;
+}
+
+.frstlogo {
+    /* width:50%; */
+}
+
+.lp-spacer {
+    height: 100px;
+}
+
+@media screen and (max-width:1024px) {
+    .lp-spacer {
+        height: 90px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .lp-spacer {
+        height: 70px;
+    }
+    .frstlogo {
+        /* width:50%; */
+    }
+    .tut-text-right {
+        text-align: left;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .lp-spacer {
+        height: 50px;
+    }
+    .frstlogo {
+        /*  width:50%;*/
+    }
+}
+
+/* Footer styles */
+
+ul.footer-nav li a:visited {
+    color: #fff;
+}
+
+.tutf-widget span {
+    font-weight: 700;
+}
+
+.tutf-widget ul {
+    margin-bottom: 20px;
+}
+
+.tutf-widget ul li {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 769px) {
+    .tutf-widget ul li {
+        margin-bottom: 4px;
+    }
+    .footer-widget h4 {
+        padding-bottom: 8px;
+        margin-bottom: 10px;
+    }
+}
+
+.tutf-widget ul li a {
+    color: #bbb;
+}
+
+.tutf-widget ul li p a {
+    color: #bbb;
+}
+
+.tutf-widget p {
+    padding-bottom: 20px;
+}
+
+/* buttons for Quick Links and Downloads */
+
+.tut-btn-len {
+    width: 125px;
+    text-align: center;
+}
+
+.tut-btn-len:visited {
+    color: white;
+}
+
+/* calltoaction for Quick Links abd Downloads should be smaller*/
+
+.tut-call-action-boxed {
+    padding: 15px 40px;
+}
+
+/* TUT logo stuff */
+
+@media only screen {
+    .tut-lgo-outer {
+        z-index: 2001;
+        position: absolute;
+        display: inline-block;
+        height: 100%;
+        margin: 3px;
+        /* remove jump on iOS devices - when we fire the navigation */
+        -webkit-transform: translateZ(0);
+        -moz-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        -o-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+}
+
+/*logo span for placing a full or mini logo*/
+
+span[id=tut-lgo-inner] {
+    display: block;
+    background: url(../images/tut/WitLogo.png);
+    background-image: url(../images/tut/WitLogo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 145px;
+    height: 50px;
+    background-size: 145px 50px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .tut-lgo-outer {
+        /*position: absolute;*/
+        position: fixed;
+        z-index: 2006;
+        /*margin-left: 5%;*/
+        /*  border: 1px solid red; */
+        height: 56px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .tut-lgo-outer {
+        /*  position: absolute; */
+        position: fixed;
+        top: 2px;
+        z-index: 2001;
+        /*margin-left: 5%;*/
+        height: 50px;
+    }
+    span[id=tut-lgo-inner] {
+        display: block;
+        background-image: url(../images/tut/WitCircleLogo.png) !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        width: 49px !important;
+        height: 46px !important;
+        background-size: 49px 46px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .tutsearchtext {
+        display: none;
+    }
+}
+
+@media print {
+    .tut-lgo-outer {
+        display: none;
+    }
+}
+
+/* resize tabs - landing pages */
+
+.bigtab {
+    font-size: 20px;
+}
+
+@media screen and (max-width:500px) {
+    .bigtab {
+        font-size: 14px;
+    }
+}
+
+/* breadcrumb - faculty landing */
+
+ul.tfbreadcrumbs {
+    margin-top: 5px;
+    text-align: center !important;
+}
+
+ul.tfbreadcrumbs li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 3px;
+    color: #999;
+    /* float: left; */
+    display: inline-block;
+}
+
+ul.tfbreadcrumbs li:before {
+    content: '/';
+    margin: 0 4px 0 2px;
+    color: #bbb;
+}
+
+ul.tfbreadcrumbs li:first-child {
+    margin: 0;
+}
+
+ul.tfbreadcrumbs li:first-child:before {
+    content: '';
+    margin: 0;
+}
+
+ul.tfbreadcrumbs li a {
+    color: #dbdbdb;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+/* breadcrumbs - dept/std pages */
+
+ul.tdbreadcrumbs {
+    float: right;
+    margin-top: 15px;
+}
+
+.no-subtitle ul.tdbreadcrumbs {
+    margin-top: 4px;
+}
+
+ul.tdbreadcrumbs li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    margin-left: 3px;
+    color: #ffffff;
+    /* float: left; */
+    display: inline-block;
+}
+
+ul.tdbreadcrumbs li:before {
+    content: '/';
+    margin: 0 4px 0 2px;
+    color: #bbb;
+}
+
+ul.tdbreadcrumbs li:first-child {
+    margin: 0;
+}
+
+ul.tdbreadcrumbs li:first-child:before {
+    content: '';
+    margin: 0;
+}
+
+ul.tdbreadcrumbs li a {
+    color: #ffffff;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+/* News listings */
+
+.news-year-div {
+    font-size: 20px;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 5px;
+    border: solid 1px #CCC;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    font-weight: 700;
+}
+
+.latest-posts-classic .left-meta-post .post-date .year {
+    display: block;
+    text-transform: uppercase;
+    line-height: 14px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    border-top: 1px solid #8b8b8b;
+    border-bottom: 1px solid #8b8b8b;
+}
+
+.nostylelink {
+    text-decoration: none;
+    color: #333;
+}
+
+.post-content {
+    padding-right: 12px;
+}
+
+/* for filters on programmes */
+
+.tag-active {
+    /* #ee3733 */
+    background-color: #000000 !important;
+    color: white !important;
+}
+
+/* fix SharePoint stuff */
+
+.ms-signInLink {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 21px !important;
+    padding: 0px 0px 0px 0px !important;
+}
+
+/* There's a 35px gap added to the bottom of the page...we will see what happens if we overwrite it */
+
+#s4-bodyContainer {
+    padding-bottom: 0px;
+}
+
+/* styles added to fix SharePoint after we reset everything with Bootstrap */
+
+#ms-designer-ribbon *,
+#ms-designer-ribbon *:before,
+#ms-designer-ribbon *:after {
+    -webkit-box-sizing: content-box;
+    /*border-box causes many issues with SP*/
+    -moz-box-sizing: content-box;
+    /*border-box causes many issues with SP*/
+    box-sizing: content-box;
+    /*border-box causes many issues with SP*/
+}
+
+#ms-designer-ribbon * [class^="span"],
+#ms-designer-ribbon * [class^="span"]:before,
+#ms-designer-ribbon * [class^="span"]:after {
+    -webkit-box-sizing: border-box;
+    /*re-enable border-box for framework spans*/
+    -moz-box-sizing: border-box;
+    /*re-enable border-box for framework spans*/
+    box-sizing: border-box;
+    /*re-enable border-box for framework spans*/
+}
+
+#ms-designer-ribbon img {
+    max-width: none;
+    width: auto;
+}
+
+#ms-designer-ribbon * [class^="span"] img {
+    max-width: 100%;
+    /*for images inside span grid*/
+}
+
+#searchImg,
+#scriptWPQ2 img,
+img.ms-webpart-menuArrowImg,
+#applist img,
+#PagingImageLink img {
+    /*within a span may still need to have width of image not 100% for SP2013 OOTB features/images*/
+    width: auto;
+    max-width: none;
+}
+
+.ms-siteactions-imgspan {
+    float: none;
+    margin: 0px;
+}
+
+#s4-ribbonrow [class*="span"] {
+    float: none;
+    margin-left: 0px;
+    line-height: 1.2em;
+}
+
+input.ms-cui-cb-input {
+    height: 14px;
+    padding: 3px 7px 2px;
+}
+
+/* More fixes for SharePoint */
+
+/* Page Width */
+
+#contentBox {
+    min-width: 0;
+}
+
+/* Text Styles */
+
+.ms-dlgContent {
+    line-height: 1.1;
+}
+
+#s4-ribbonrow {
+    line-height: 1.2;
+}
+
+.ms-core-menu-link:hover,
+.ms-core-menu-link:focus,
+.ms-core-menu-link:active,
+#s4-ribbonrow a:hover,
+#s4-ribbonrow a:focus,
+#s4-ribbonrow a:active {
+    text-decoration: none;
+}
+
+#pageStatusBar,
+.ms-cui-tooltip {
+    line-height: 1.1;
+    font-size: 8pt;
+}
+
+.ms-cui-modalDiv-ie,
+.ms-cui-glass-ie {
+    background-color: transparent;
+}
+
+/* Box Sizing */
+
+#s4-ribbonrow *,
+#s4-ribbonrow *:before,
+#s4-ribbonrow *:after,
+#ms-help *,
+*[class*='ms-core-menu'],
+*[class*='ms-dlg'],
+*[class*='ms-dlg']:before,
+*[class*='ms-dlg']:after,
+.ms-dlgFrameContainer>div,
+.ms-dlgFrameContainer>div:before,
+.ms-dlgFrameContainer>div:after,
+.ms-dlgFrameContainer>div>div,
+.ms-dlgFrameContainer>div>div:before,
+.ms-dlgFrameContainer>div>div:after,
+.ms-MenuUIPopupBody,
+.ms-MenuUIPopupBody:before,
+.ms-MenuUIPopupBody:after,
+.ms-MenuUIPopupBody *,
+.ms-MenuUIPopupBody *:before,
+.ms-MenuUIPopupBody *:after,
+.ms-ToolPaneOuter,
+.ms-ToolPaneOuter:before,
+.ms-ToolPaneOuter:after,
+.ms-ToolPaneOuter *,
+.ms-ToolPaneOuter *:before,
+.ms-ToolPaneOuter *:after,
+*[class*='ms-cui'],
+*[class*='ms-cui']:before,
+*[class*='ms-cui']:after,
+*[class*='ms-cui'] *,
+*[class*='ms-cui'] *:before,
+*[class*='ms-cui'] *:after,
+*[class*='ms-dlg'] *,
+*[class*='ms-dlg'] *:before,
+*[class*='ms-dlg'] *:after,
+*[class*='ms-webpart'] * {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/* Revolution Slider CSS fix for Rendering issue */
+
+.slotholder {
+    transform: none !important;
+}
